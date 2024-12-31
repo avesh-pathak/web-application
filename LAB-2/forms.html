@@ -4,34 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        form {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: auto;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"], 
+        input[type="tel"], 
+        input[type="date"], 
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        a {
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
     <form action="login.html" method="GET">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name" required>
         
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required>
         
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
+        <input type="password" id="password" name="password" required>
         
         <label for="gender">Gender:</label>
-        <input type="radio" id="male" name="gender" value="male" required>
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female" required>
-        <label for="female">Female</label><br><br>
+        <input type="radio" id="male" name="gender" value="male" required> Male
+        <input type="radio" id="female" name="gender" value="female" required> Female
         
         <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required><br><br>
+        <input type="date" id="dob" name="dob" required>
         
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required><br><br>
+        <input type="tel" id="phone" name="phone" required>
         
         <label for="address">Address:</label>
-        <textarea id="address" name="address" required></textarea><br><br>
+        <textarea id="address" name="address" required></textarea>
         
-        <a href="forgot.html">Forgot Password?</a><br><br>
+        <a href="forgot.html">Forgot Password?</a><br>
         
         <input type="submit" value="Submit">
         
