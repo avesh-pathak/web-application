@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Dynamic Fonts Example</title>
+    <style type="text/css">
+      .regText {
+        font: 18pt 'Arial';
+      }
+      .wordText {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="regText">
+      "The Beauty of Nature Lies In"
+      <span class="wordText"
+        onmouseover="this.style.color = 'brown';
+                     this.style.fontStyle = 'italic';
+                     this.style.fontSize = '26pt';"
+        onmouseout="this.style.color = 'green';
+                    this.style.fontStyle = 'normal';
+                    this.style.fontSize = '18pt';">
+        Mountains & Rivers
+      </span>
+      That Inspire Tranquility and Adventure.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version = "1.0"  encoding = "utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- anywhere.html
+     Display a message when the mouse button is pressed,
+     no matter where it is on the screen 
+     -->
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+    <title> Sense events anywhere </title>
+
+    <script type = "text/javascript"  src = "anywhere.js" >
+    </script>
+  </head>
+  <body onmousedown = "displayIt(event);"
+        onmouseup = "hideIt();">
+    <p>
+      <span id= "message"  
+            style = "color: blue; visibility: hidden;
+                     position: relative;
+                     font-size: 15pt; font-style: bold;
+                     font-weight: bold;">
+         Please don't click here! 
+      </span>
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br />
+    </p>
+  </body>
+</html>

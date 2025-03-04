@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> Dynamic stacking of images </title>
+    <style type = "text/css">
+      .image1 {position: absolute; top: 0; left: 0; 
+               z-index: 0;}
+      .image2 {position: absolute; top: 50px; left: 110px; 
+               z-index: 0;}
+      .image3 {position: absolute; top: 100px; left: 220px; 
+               z-index: 0;}
+    </style>
+  </head>
+  <body>
+    <p>
+      <img class = "image1"  id = "control1"
+           src = "img.jpg" 
+           alt = "(Picture of an airplane)" width="50%" height="50%"
+           onclick = "fun('control1')" />
+      <img class = "image2"  id = "control2"
+           src = "img1.jpg"
+           alt = "(Picture of an airplane)" width="50%" height="50%"
+           onclick = "fun('control2')" />
+      <img class = "image3"  id = "control3"
+           src = "img2.jpg"
+           alt = "(Picture of an airplane)" width="50%" height="50%"
+           onclick = "fun('control3')" />
+    </p>
+ 
+<script>
+var topp = "control3";
+
+function fun(newTop) 
+{
+  var domTop = document.getElementById(topp).style;
+  var domNew = document.getElementById(newTop).style;
+  domTop.zIndex = "0";
+  domNew.zIndex = "10";
+  topp = newTop;
+}
+
+</script>
+ </body>
+</html>
+
